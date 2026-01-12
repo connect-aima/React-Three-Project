@@ -9,17 +9,23 @@ function App() {
   return (
     <>
     <main>
-    <Canvas style={{
+     <div className="images">
+          <img id='tomorrowland' src="/tommorowland.png" alt="" />
+          <img id='navy-pier' src="/navy-pier.png" alt="" />
+          <img id='msi-chicago' src="/msi-chicago.png" alt="" />
+          <img id='phone' src="/phone.png" alt="" />
+          <img id='kikk' src="/kikk.png" alt="" />
+          <img id='kennedy' src="/kennedy.png" alt="" />
+          <img id='opera' src="/opera.png" alt="" />
+        </div>
+    <Canvas
+    id='canvas-elem' 
+    style={{
       height:"100vh",
       width:"100vw",
       position:"fixed",
       top:0,
       left:0,
-      backgroundImage:`url('/background-l.png')`,
-      backgroundSize:"cover",
-      backgroundRepeat:"no-repeat",
-
-
     }}>
      <Dog />
     </Canvas>
@@ -68,9 +74,61 @@ function App() {
           </p>
         </div>
       </div>
+      <div className="first-line"></div>
+      <div className="second-line"></div>
     </section>
-    <section id='section-2'></section>
-    <section id='section-3'></section>
+    <section id='section-2' >
+          <div className="titles">
+            <div img-title="tomorrowland" className="title">
+              <small>2020 - ONGOING</small>
+              <h1>Tomorrowland</h1>
+            </div>
+            <div img-title="navy-pier" className="title">
+              <small>2020 - ONGOING</small>
+              <h1> Navy Pier</h1>
+            </div>
+            <div img-title="msi-chicago" className="title">
+              <small>2020 - ONGOING</small>
+              <h1>  MSI Chicago</h1>
+            </div>
+            <div img-title="phone" className="title">
+              <small>2020 - ONGOING</small>
+              <h1>This Was Louise’s Phone</h1>
+            </div>
+            <div img-title="kikk" className="title">
+              <small>2020 - ONGOING</small>
+              <h1>KIKK Festival 2018</h1>
+            </div>
+            <div img-title="kennedy" className="title">
+              <small>2020 - ONGOING</small>
+              <h1>The Kennedy Center</h1>
+            </div>
+            <div img-title="opera" className="title">
+              <small>2020 - ONGOING</small>
+              <h1>Royal Opera Of Wallonia</h1>
+            </div>
+          </div>
+
+
+    </section>
+    <section id='section-3'>
+      <div className="top">
+        <div className="left">
+          <h3>Lorem, ipsum dolor sit amet
+            <br /> consectetur adipisicing elit. Voluptatem
+            <br /> voluptatibus nostrum debitis enim deleniti 
+            <br />animi.</h3>
+        </div>
+        <div className="right"></div>
+      </div>
+      <div className="bottom">
+        <div className="left"></div>
+        <div className="right">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate fuga minima aliquam consectetur voluptas modi earum odit eius, eveniet delectus adipisci ut impedit quia in repudiandae libero explicabo blanditiis vel quod quidem dolore culpa maxime. Aspernatur optio tenetur autem. Necessitatibus beatae voluptatibus nobis sequi tempora explicabo, omnis consequuntur aliquam excepturi!</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente obcaecati ad tempore corporis voluptatibus, placeat in quas harum nisi at delectus dolorem natus aperiam veniam voluptates ipsam. Reiciendis et cum tempore! Est minus incidunt porro deleniti harum ipsa obcaecati quis, rem nihil, dicta sit! Illum voluptate ipsum eos dignissimos blanditiis.</p>
+        </div>
+      </div>
+    </section>
     </main>
     </>
   )
